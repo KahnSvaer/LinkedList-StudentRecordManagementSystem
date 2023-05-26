@@ -9,7 +9,7 @@ class RecordsPage extends JLayeredPane{
 	ImageIcon image;
 	JLabel bGround;
 	ButtonsPanel bp;
-	RecordsPanel pane;
+	public RecordsPanel pane;
 	RecordsPage(Node Head)	{
 		bp = new ButtonsPanel(Head);
 		bGround = new JLabel();

@@ -132,14 +132,16 @@ class EntryClass extends JFrame implements ActionListener,FocusListener{
 		 if(e.getSource()==submit)
 		 {	
 			 DoAction(option);
-			 if(count==1) 
+			 Node temp = Head;
+			 String recordLinkedList="\n  Roll\tName\tCourse\t%\n\n";
+			 Login.again.rp.pane.records.setText(recordLinkedList);
+			 System.out.println("Checking");
+			 while(temp!=null)
 			 {
-				 Login.again.win2.dispose();
-				 count++;
+				Login.again.rp.pane.records.append("  "+temp.rollNo+"\t"+temp.name+"\t"+temp.course+"\t"+temp.percentage+"\n");
+				temp=temp.nextNode; 
 			 }
-			 else if (this.newAgain!=null) 
-				 newAgain.win2.dispose();
-			 newAgain = new App2((Node)Head);
+			 
 			 this.dispose();
 			 
 		 }

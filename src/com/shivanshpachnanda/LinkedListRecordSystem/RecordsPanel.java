@@ -11,7 +11,7 @@ import javax.swing.JScrollPane;
 
 @SuppressWarnings("serial")
 class RecordsPanel extends JPanel{
-	JTextArea records;
+	public JTextArea records;
 	Node Head;
 	Node temp;
 	RecordsPanel(Node Head)
